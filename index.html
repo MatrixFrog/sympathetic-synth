@@ -288,6 +288,10 @@
             keyboard.keyUp(function (note, frequency) {
                 synth.stopNote(note);
             });
+            
+            window.addEventListener('contextmenu', function(event) {
+                event.preventDefault();
+            });
         </script>
     </body>
 </html>
